@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="side-img"></div>
+    <div class="form-content">
+        <div class="header">
+            <p>
+                This is not a real life online service! <br>
+                You know you want something like this in your life. <br>
+                So sign up today. <br>
+                You know you want to.
+            </p>
+        </div>
+        <div class="fields">
+            <p>
+                Let's do this!
+            </p>
+            <form id="form-1" action="" method="post">
+                <div class="names">
+                    <label for="f-name">
+                        <span>FIRST NAME</span>
+                        <input type="text" name="f-name" id="f-name">
+                    </label>
+                    <label for="l-name">
+                        <span>LAST NAME</span>
+                        <input type="text" name="l-name" id="l-name">
+                    </label>
+                </div>
+                <div class="contact">
+                    <label for="con-mail">
+                        <span>EMAIL</span>
+                        <input type="text" name="con-mail" id="con-mail">
+                    </label>
+                    <label for="con-num">
+                        <span>PHONE NUMBER</span>
+                        <input type="text" name="con-num" id="con-num">
+                    </label>
+                </div>
+                <div class="password">
+                    <label for="pass">
+                        <span>PASSWORD</span>
+                        <input class="error" type="password" name="pass" id="pass" required>
+                    </label>
+                    <label for="pass-con">
+                        <span>CONFIRM PASSWORD</span>
+                        <input class="error" type="password" name="pass-con" id="pass-con" required>
+                    </label>
+                </div>
+            </form>
+        </div>
+        <div class="footer">
+            <button type="submit" form="form-1">Create Account</button>
+            <p>Already have an account? <a href="http://" target="_blank" rel="noopener noreferrer">Log in</a></p>
+        </div>
+    </div>
+</body>
+</html>
