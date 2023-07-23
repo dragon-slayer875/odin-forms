@@ -39,7 +39,7 @@ body {
     flex: 1;
     box-shadow: 0px 1.5px 5px rgba(0, 0, 0, 0.199);
     padding-bottom: 15px;
-    overflow: scroll;
+    /* overflow: scroll; */
 }
 
 .fields div {
@@ -60,7 +60,7 @@ input {
     border-color: #E5E7EB;
     border-radius: 0.2em;
     border-style: solid;
-    height: 25px;
+    min-height: 25px;
     max-width: 250px;
 }
 
@@ -71,8 +71,9 @@ input:focus {
 } 
 
 .footer {
+    flex: 1;
     padding-left: 30px;
-    min-height: 30%;
+    max-height: 30%;
     font-size: small;
 }
 
@@ -96,4 +97,15 @@ input:focus {
     border: 2px solid red;
     box-shadow: 3px 2px 2px rgba(0, 0, 0, 0.132);
     outline: none;
+}
+
+.error-message {
+    -webkit-text-fill-color: red;
+    font-size: smaller;
+    visibility: hidden;
+}
+
+.error + .error-message {
+    visibility: visible;
+    margin-bottom:30px;
 }
